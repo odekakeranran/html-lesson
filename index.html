@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>電通 花子のホームページ</title>
+    <style>
+      h1 {
+        color: pink;
+        background-color: #4abdac;
+        padding: 32px;
+        text-shadow: 2px 2px 4px black;
+        font-size: 64px;
+        text-align: center;
+      }
+      h2 {
+        color: darkgreen;
+        border-left: 8px solid #4abdac;
+        padding: 8px;        
+        margin-top: 32px;
+      }
+      img {
+        border: 4px solid gray;
+        width: 480px;
+        height: 270px;
+        border-radius: 20px;
+      }
+      main {
+        margin: 16px;
+      }
+      .cycling {
+        color: blue;
+      }
+      .violine {
+        color: orange;
+      }
+      .pictures {
+        background-color: black;
+      }
+      .cycling,
+      .violine {
+        font-size: 20px;
+      }
+      .food li {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>電通 花子のホームページ</h1><!--<h1>はメインの見出し-->
+    <main><!--ページのメインコンテンツを設置するのに用いる-->
+      <h2>test1</h2><!--<h2>は二番目の見出し。以後<h3>,<h4>と続く-->
+      <p><!--段落を定義-->
+        <!--こんにちは。電通 花子です。<br>趣味はサイクリングとバイオリンです。<br>よろしくお願いします！-->
+        こんにちは。電通 花子です。<br>趣味は<span class="cycling">サイクリング</span>と<span class="violine">バイオリン</span>です。<br>よろしくお願いします！
+      </p>
+      <h2>サイト紹介</h2>
+      <p>電気通信大学プログラミング教室のwebサイトは<a href="https://www.uec-programming.com">こちら</a>！！</p>
+      <h2>好きな食べ物</h2><!--<a>はhref属性を用 </p>いてハイパーリンクを作成-->
+      <ul class="food">
+        <li>納豆</li><!--点・-->
+        <li>バナナ</li><!--点・-->
+        <li>海老</li><!--点・-->
+      </ul>
+      <h2>おすすめ小説ランキング</h2><!--<h2>は項目の並びに順序がないリストを表す-->
+      <ol><!--番号付きリスト-->
+        <li>ハリーポッター</li><!--リストの項目を表示1-->
+        <li>ナルニア国物語</li><!--リストの項目を表示2-->
+        <li>ニルスの不思議な旅</li><!--リストの項目を表示3-->
+      </ol>
+      <h2>写真</h2>v
+      <div class="pictures">
+        <img src="https://i.imgur.com/HIxTKbe.jpg" alt="東京タワーから見た夜景" />
+        <img src="https://i.imgur.com/pAQ7QKc.jpg" alt="高尾山から見た朝焼け" />
+      </div>
+      <h2>お問い合わせ</h2>
+      <form action="http://soasa.starfree.jp/form.php">
+        名前: <input type="test" placeholder="電通花子"/>
+        <br />
+        <input type="radio" name="animal" value="dog" />犬派
+        <input type="radio" name="animal" value="cat" />猫派
+        <input type="radio" name="animal" value="cat" />その他
+        <br />
+        <input type="checkbox" name="music" />楽器経験がある
+        <br />
+        <textarea name="comment"></textarea>
+        <br />
+        <input type="submit" value="送信する" />
+      </form>
+    </main>
+  </body>
+</html>             
+<!--marginプロパティは、margin-top, margin-right, margin-bottom, margin-leftをまとめて要素の外側の周りに対しての余白を指定-->
+<!--margin: 16px 1em 0 auto;のように指定-->
+<!--1つの時: 全方向-->
+<!--2つの時: 1つ目は上下、2つ目は左右-->
+<!--3つの時: 1つ目は上、2つ目は左右、3つ目は下-->
+<!--4つの時: 上、右、下、左の順に余白が作成されます-->
+
+<!--paddingプロパティは、padding-top, padding-right, padding-bottom, padding-leftをまとめて要素の内側に対しての余白を指定-->
+<!--1つの時: 全方向-->
+<!--2つの時: 1つ目は上下、2つ目は左右-->
+<!--3つの時: 1つ目は上、2つ目は左右、3つ目は下-->
+<!--4つの時: 上、右、下、左の順に余白が作成されます-->
+<!--padding: 32px 1em 0 8px;のように指定-->
+
+<!--border-radiusプロパティは要素の角の半径を指定するために用いる-->
+<!--指定する数によって角の丸め方が変わる-->
+<!--1つの時: 4つの角-->
+<!--2つの時: 1つ目は左上と右下、2つ目は右上と左下-->
+<!--3つの時: 1つ目は左上、2つ目は右上と左下、3つ目は右下-->
+<!--4つの時: 左上、右上、右下、左下の順に角を丸めます-->
+<!--また/で区切り、2つ目の半径を指定すると楕円形に丸めることができます-->
